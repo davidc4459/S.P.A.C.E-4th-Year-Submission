@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:id="@+id/circle_list"
+    android:name="com.david.spacev4.UserPages.TalksAndClasses.TalksAndClassesListFragmentation"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FEFEF2"
+    android:layout_marginTop="55dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    />

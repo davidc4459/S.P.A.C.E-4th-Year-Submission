@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+        android:shape="rectangle" android:padding="10dp">
+        <solid android:color="#FFFFFF"/>
+        <stroke android:width="1dip" android:color="#000000" />
+        <item android:state_pressed="true" android:state_enabled="false" android:color="#ff9000" />
+        <corners
+            android:bottomRightRadius="15dp"
+            android:bottomLeftRadius="15dp"
+            android:topLeftRadius="15dp"
+            android:topRightRadius="15dp"/>
+        <item
+            android:state_pressed="true"
+            android:width="1dip" android:color="#ff9000"
+            /> <!-- pressed -->
+        <item
+            android:state_focused="true"
+            android:width="1dip" android:color="#ff9000"
+            /> <!-- focused -->
+
+    </shape>

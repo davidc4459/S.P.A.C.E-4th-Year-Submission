@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.david.spacev4">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".AccountChoice"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AdminPages.adminHomePage"
+            android:label="@string/title_activity_admin_home_page"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".UserPages.userMainMenu"
+            android:label="@string/title_activity_user_main_menu"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AdminPages.createArtsAndCraftsPost"
+            android:label="@string/title_activity_create_arts_and_crafts_post"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AdminPages.createCompetitionPost"
+            android:label="@string/title_activity_create_competition_post"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AdminPages.createTalksAndClassesPost"
+            android:label="@string/title_activity_create_talks_and_classes_post"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".UserPages.ArtsAndCrafts.viewArtsAndCraftsListInfo"
+            android:label="@string/title_activity_view_arts_and_crafts_list_info"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".UserPages.ArtsAndCrafts.viewArtsAndCraftsListExtraInfo"
+            android:label="@string/title_activity_view_arts_and_crafts_list_extra_info"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".UserPages.ArtsAndCrafts.ArtsAndCraftsDetailFragment"
+            android:label="@string/title_activity_arts_and_crafts_detail_fragment"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".UserPages.ArtsAndCrafts.ArtsAndCraftsDetailFragmentation"
+            android:label="@string/title_activity_arts_and_crafts_detail_fragmentation"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".UserPages.Competition.viewCompetitionListInfo"
+            android:label="@string/title_activity_view_competition_list_info"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".UserPages.Competition.viewCompetitionListExtraInfo"
+            android:label="@string/title_activity_view_competition_list_extra_info"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".UserPages.Competition.CompetitionDetailFragmentation"
+            android:label="@string/title_activity_competition_detail_fragmentation"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".UserPages.TalksAndClasses.TalksAndClassesDetailFragmentation"
+            android:label="@string/title_activity_talks_and_classes_detail_fragmentation"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".UserPages.TalksAndClasses.viewTalksAndClassesListExtraInfo"
+            android:label="@string/title_activity_view_talks_and_classes_list_extra_info"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".UserPages.TalksAndClasses.viewTalksAndClassesListInfo"
+            android:label="@string/title_activity_view_talks_and_classes_list_info"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AdminLogin.Login"
+            android:label="@string/title_activity_login"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AdminLogin.CreateAccount"
+            android:label="@string/title_activity_create_account"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".UserLogin.UserLogin"
+            android:label="@string/title_activity_user_login"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".UserLogin.UserCreateAccount"
+            android:label="@string/title_activity_user_create_account"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".UserLogin.UserLoginScreen"
+            android:label="@string/title_activity_user_login_screen"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AdminPages.CreateYouthClub"
+            android:label="@string/title_activity_create_youth_club"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".UserPages.FollowPage"
+            android:label="@string/title_activity_follow_page"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+    </application>
+
+</manifest>

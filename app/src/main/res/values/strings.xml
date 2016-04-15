@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">SpaceV4</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_admin_home_page">adminHomePage</string>
+    <string name="title_activity_user_main_menu">userMainMenu</string>
+    <string name="title_activity_create_arts_and_crafts_post">createArtsAndCraftsPost</string>
+    <string name="title_activity_create_competition_post">createCompetitionPost</string>
+    <string name="title_activity_create_talks_and_classes_post">createTalksAndClassesPost</string>
+    <string name="title_activity_view_arts_and_crafts_list_info">viewArtsAndCraftsListInfo</string>
+    <string name="title_activity_view_arts_and_crafts_list_extra_info">
+        viewArtsAndCraftsListExtraInfo
+    </string>
+    <string name="title_activity_arts_and_crafts_detail_fragment">ArtsAndCraftsDetailFragment
+    </string>
+    <string name="title_activity_arts_and_crafts_detail_fragmentation">
+        ArtsAndCraftsDetailFragmentation
+    </string>
+    <string name="title_activity_view_competition_list_info">viewCompetitionListInfo</string>
+    <string name="title_activity_view_competition_list_extra_info">viewCompetitionListExtraInfo
+    </string>
+    <string name="title_activity_competition_detail_fragmentation">CompetitionDetailFragmentation
+    </string>
+    <string name="title_activity_talks_and_classes_detail_fragmentation">
+        TalksAndClassesDetailFragmentation
+    </string>
+    <string name="title_activity_view_talks_and_classes_list_extra_info">
+        viewTalksAndClassesListExtraInfo
+    </string>
+    <string name="title_activity_view_talks_and_classes_list_info">viewTalksAndClassesListInfo
+    </string>
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_create_account">CreateAccount</string>
+    <string name="title_activity_user_login">UserLogin</string>
+    <string name="title_activity_user_create_account">UserCreateAccount</string>
+    <string name="title_activity_user_login_screen">UserLoginScreen</string>
+    <string name="title_activity_create_youth_club">CreateYouthClub</string>
+    <string name="title_activity_follow_page">FollowPage</string>
+</resources>

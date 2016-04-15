@@ -1,0 +1,231 @@
+{
+ "kind": "discovery#restDescription",
+ "etag": "\"u_zXkMELIlX4ktyNbM2XKD4vK8E/3HgqSk621hAaJzW6xXtFdaVZJQk\"",
+ "discoveryVersion": "v1",
+ "id": "adminLoginApi:v1",
+ "name": "adminLoginApi",
+ "version": "v1",
+ "description": "This is an API",
+ "ownerDomain": "backend.myapplication.david.example.com",
+ "ownerName": "backend.myapplication.david.example.com",
+ "icons": {
+  "x16": "http://www.google.com/images/icons/product/search-16.gif",
+  "x32": "http://www.google.com/images/icons/product/search-32.gif"
+ },
+ "protocol": "rest",
+ "baseUrl": "https://myApplicationId.appspot.com/_ah/api/adminLoginApi/v1/",
+ "basePath": "/_ah/api/adminLoginApi/v1/",
+ "rootUrl": "https://myApplicationId.appspot.com/_ah/api/",
+ "servicePath": "adminLoginApi/v1/",
+ "batchPath": "batch",
+ "parameters": {
+  "alt": {
+   "type": "string",
+   "description": "Data format for the response.",
+   "default": "json",
+   "enum": [
+    "json"
+   ],
+   "enumDescriptions": [
+    "Responses with Content-Type of application/json"
+   ],
+   "location": "query"
+  },
+  "fields": {
+   "type": "string",
+   "description": "Selector specifying which fields to include in a partial response.",
+   "location": "query"
+  },
+  "key": {
+   "type": "string",
+   "description": "API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token.",
+   "location": "query"
+  },
+  "oauth_token": {
+   "type": "string",
+   "description": "OAuth 2.0 token for the current user.",
+   "location": "query"
+  },
+  "prettyPrint": {
+   "type": "boolean",
+   "description": "Returns response with indentations and line breaks.",
+   "default": "true",
+   "location": "query"
+  },
+  "quotaUser": {
+   "type": "string",
+   "description": "Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. Overrides userIp if both are provided.",
+   "location": "query"
+  },
+  "userIp": {
+   "type": "string",
+   "description": "IP address of the site where the request originates. Use this if you want to enforce per-user limits.",
+   "location": "query"
+  }
+ },
+ "auth": {
+  "oauth2": {
+   "scopes": {
+    "https://www.googleapis.com/auth/userinfo.email": {
+     "description": "View your email address"
+    }
+   }
+  }
+ },
+ "schemas": {
+  "AdminLogin": {
+   "id": "AdminLogin",
+   "type": "object",
+   "properties": {
+    "adminID": {
+     "type": "string"
+    },
+    "adminPasword": {
+     "type": "string"
+    }
+   }
+  },
+  "CollectionResponse_AdminLogin": {
+   "id": "CollectionResponse_AdminLogin",
+   "type": "object",
+   "properties": {
+    "items": {
+     "type": "array",
+     "items": {
+      "$ref": "AdminLogin"
+     }
+    },
+    "nextPageToken": {
+     "type": "string"
+    }
+   }
+  }
+ },
+ "methods": {
+  "get": {
+   "id": "adminLoginApi.get",
+   "path": "adminLogin/{AdminID}",
+   "httpMethod": "GET",
+   "parameters": {
+    "AdminID": {
+     "type": "string",
+     "required": true,
+     "location": "path"
+    }
+   },
+   "parameterOrder": [
+    "AdminID"
+   ],
+   "response": {
+    "$ref": "AdminLogin"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "insert": {
+   "id": "adminLoginApi.insert",
+   "path": "adminLogin",
+   "httpMethod": "POST",
+   "request": {
+    "$ref": "AdminLogin",
+    "parameterName": "resource"
+   },
+   "response": {
+    "$ref": "AdminLogin"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "list": {
+   "id": "adminLoginApi.list",
+   "path": "adminLogin",
+   "httpMethod": "GET",
+   "parameters": {
+    "cursor": {
+     "type": "string",
+     "location": "query"
+    },
+    "limit": {
+     "type": "integer",
+     "format": "int32",
+     "location": "query"
+    }
+   },
+   "response": {
+    "$ref": "CollectionResponse_AdminLogin"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "patch": {
+   "id": "adminLoginApi.patch",
+   "path": "adminLogin/{AdminID}",
+   "httpMethod": "PATCH",
+   "parameters": {
+    "AdminID": {
+     "type": "string",
+     "required": true,
+     "location": "path"
+    }
+   },
+   "parameterOrder": [
+    "AdminID"
+   ],
+   "request": {
+    "$ref": "AdminLogin"
+   },
+   "response": {
+    "$ref": "AdminLogin"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "remove": {
+   "id": "adminLoginApi.remove",
+   "path": "adminLogin/{AdminID}",
+   "httpMethod": "DELETE",
+   "parameters": {
+    "AdminID": {
+     "type": "string",
+     "required": true,
+     "location": "path"
+    }
+   },
+   "parameterOrder": [
+    "AdminID"
+   ],
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "update": {
+   "id": "adminLoginApi.update",
+   "path": "adminLogin/{AdminID}",
+   "httpMethod": "PUT",
+   "parameters": {
+    "AdminID": {
+     "type": "string",
+     "required": true,
+     "location": "path"
+    }
+   },
+   "parameterOrder": [
+    "AdminID"
+   ],
+   "request": {
+    "$ref": "AdminLogin",
+    "parameterName": "resource"
+   },
+   "response": {
+    "$ref": "AdminLogin"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  }
+ }
+}
